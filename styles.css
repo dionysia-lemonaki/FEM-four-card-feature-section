@@ -1,0 +1,31 @@
+/* Design System */
+
+:root {
+  /* colours */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --grey-500: hsl(234, 12%, 34%);
+  --grey-400: hsl(212, 6%, 44%);
+  --white: hsl(0, 0%, 100%);
+  /* typography */
+  --ff: "Poppins", sans-serif;
+  --fs-sm: 0.813rem; /* 13px */
+  --fs-md: 0.938rem; /* 15px */
+  --fs-lg: 1.25rem; /* 20px */
+  --fs-xl: 2.25rem; /* 36px */
+  --fw-extralight: 200;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --lh-tight: 1.35;
+  --lh-normal: 1.4;
+  --lh-loose: 1.6;
+  --lsp-title: 0.007em;
+  /* spacing */
+  --sp-100: 0.5rem; /* 8px */
+  --sp-200: 1rem; /* 16px */
+  --sp-300: 1.5rem; /* 24px; */
+  --sp-400: 2rem; /* 32px */
+  --sp-500: 2.5rem; /* 40px */
+}
