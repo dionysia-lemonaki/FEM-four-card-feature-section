@@ -29,3 +29,29 @@
   --sp-400: 2rem; /* 32px */
   --sp-500: 2.5rem; /* 40px */
 }
+
+/* Fonts */
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./fonts/poppins-200.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/poppins-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/poppins-600.woff2") format("woff2");
+}
