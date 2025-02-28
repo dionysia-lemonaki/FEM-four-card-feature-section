@@ -14,14 +14,14 @@
   --fs-sm: 0.813rem; /* 13px */
   --fs-md: 0.938rem; /* 15px */
   --fs-lg: 1.25rem; /* 20px */
-  --fs-xl: 2.25rem; /* 36px */
+  --fs-xl: 1.5rem; /* 24px */
+  --fs-xxl: 2.25rem; /* 36px */
   --fw-extralight: 200;
   --fw-regular: 400;
   --fw-semibold: 600;
   --lh-tight: 1.35;
   --lh-normal: 1.4;
   --lh-loose: 1.6;
-  --lsp-title: 0.007em;
   /* spacing */
   --sp-100: 0.5rem; /* 8px */
   --sp-200: 1rem; /* 16px */
@@ -96,6 +96,11 @@ ol[role="list"] {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff);
+  color: var(--grey-500);
 }
 
 h1,
@@ -140,4 +145,87 @@ textarea:not([rows]) {
 
 :target {
   scroll-margin-block: 5ex;
+}
+
+/* Page Styles */
+
+main {
+  padding: var(--sp-400);
+}
+
+.features-overview {
+  max-width: 19.75;
+}
+
+.features-overview__title {
+  font-size: var(--fs-xl);
+  line-height: var(--lh-normal);
+  letter-spacing: 0.0104em;
+  font-weight: var(--fw-extralight);
+  margin-inline: auto;
+}
+
+.features-overview__highlight {
+  display: block;
+  font-weight: var(--fw-semibold);
+}
+
+.features-overview__description {
+  font-size: var(--fs-md);
+  line-height: var(--lh-normal);
+  margin-top: var(--sp-200);
+  margin-inline: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: var(--sp-400);
+  margin-top: 3.75rem;
+}
+
+.card {
+  background-color: var(--white);
+  box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: var(--sp-100);
+  padding: var(--sp-400);
+  border-top: 4px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.card--supervisor {
+  border-color: var(--cyan);
+}
+
+.card--team-builder {
+  border-color: var(--red);
+}
+
+.card--karma {
+  border-color: var(--orange);
+}
+
+.card--calculator {
+  border-color: var(--blue);
+}
+
+.card__title {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-semibold);
+}
+
+.card__description {
+  color: var(--grey-400);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-loose);
+  margin-bottom: var(--sp-400);
+}
+
+.card__icon {
+  margin-left: auto;
 }
