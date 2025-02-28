@@ -155,6 +155,8 @@ main {
 
 .features-overview {
   max-width: 19.75rem;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .features-overview__title {
@@ -162,7 +164,6 @@ main {
   line-height: var(--lh-normal);
   letter-spacing: 0.0104em;
   font-weight: var(--fw-extralight);
-  margin-inline: auto;
 }
 
 .features-overview__highlight {
@@ -174,10 +175,10 @@ main {
   font-size: var(--fs-md);
   line-height: var(--lh-normal);
   margin-top: var(--sp-200);
-  margin-inline: auto;
 }
 
 .cards {
+  max-width: 19.625rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -228,4 +229,44 @@ main {
 
 .card__icon {
   margin-left: auto;
+}
+
+/* Larger Screen Styles */
+
+@media (min-width: 60rem) {
+  .features-overview {
+    max-width: 33.75rem;
+    margin-inline: auto;
+  }
+
+  .features-overview__title {
+    font-size: var(--fs-xxl);
+  }
+
+  .cards {
+    max-width: 69.625rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      ".......... builder .........."
+      "supervisor builder calculator"
+      "supervisor karma calculator"
+      ".......... karma ...........";
+  }
+
+  .card--supervisor {
+    grid-area: supervisor;
+  }
+
+  .card--team-builder {
+    grid-area: builder;
+  }
+
+  .card--karma {
+    grid-area: karma;
+  }
+
+  .card--calculator {
+    grid-area: calculator;
+  }
 }
